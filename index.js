@@ -1,10 +1,21 @@
 const readLine = require('readline-sync') //biblioteca de pegar dados do input pelo cmd ..
+const robots ={
+      text : require('./robots/text.js')
+
+
+}
+
+
+
+
 
 function start(){
 const content = {}
 
 content.searchTerm = askAndReturnSearchTerm()
 content.prefix = askAndReturnPrefix()
+
+robots.text(content)
 
 function askAndReturnSearchTerm(){
 
