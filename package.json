@@ -1,7 +1,7 @@
 {
   "name": "robotyoutube",
   "version": "1.0.0",
-  "description": "Cadastro de Usuário",
+  "description": "robot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
