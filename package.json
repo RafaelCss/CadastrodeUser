@@ -18,13 +18,13 @@
   "homepage": "https://github.com/RafaelCss/robotyoutube#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
-    "readline-sync": "^1.4.10",
-    "sbd": "^1.0.18",
-    "watson-developer-cloud": "^4.0.1",
-    "node-fetch": "^2.3.0",
     "express": "^4.16.4",
     "gm": "^1.23.1",
     "googleapis": "^38.0.0",
-    "image-downloader": "^3.4.2"
+    "image-downloader": "^3.4.2",
+    "node-fetch": "^2.3.0",
+    "readline-sync": "^1.4.10",
+    "sbd": "^1.0.18",
+    "watson-developer-cloud": "^4.0.1"
   }
 }
