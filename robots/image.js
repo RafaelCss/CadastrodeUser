@@ -9,9 +9,9 @@ async function robot(){
 
 const content = state.load()
 
-//await fetchImagenOfAllSentences(content)
- await downloadAllImages(content)   
-//state.save(content)
+await fetchImagenOfAllSentences(content)
+await downloadAllImages(content)   
+state.save(content)
 
 async function fetchImagenOfAllSentences(content){
     for(const sentence of content.sentences){
@@ -53,7 +53,7 @@ async function downloadAllImages(content){
             const imageUrl = images[imageIndex]
 
             try{
-                if(images.downloadImages.includes(imageUrl)){
+                if(content.downloadImages.includes(imageUrl)){
                     throw new Error('imagem já foi baixada')
                 }
                  await downloadAndSave(imageUrl,`${sentenceIndex}-original.png`)
